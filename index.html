@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+      integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Taco Truck</title>
+  </head>
+  <body>
+    <header></header>
+    <main class="container-fluid">
+      <div class="row">
+        <div class="col">
+          <h1 id="title">Welcome To The Taco Truck</h1>
+          <button class="btn btn-danger" onclick="party()">Party!</button>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col" id="buttons">
+          <button class="btn btn-primary" onclick="draw('taco')">Tacos!</button>
+          <button class="btn btn-primary" onclick="draw('burrito')">
+            Burritos!
+          </button>
+          <button class="btn btn-primary" id="ench" onclick="draw('enchilada')">
+            Enchilada!
+          </button>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col" id="food-details"></div>
+      </div>
+    </main>
+    <footer></footer>
+    <script src="app.js"></script>
+  </body>
+</html>
